@@ -1,0 +1,97 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #87CEEB, #B0E0E6);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+}
+
+.container {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Lebar menyesuaikan layar ponsel */
+    max-width: 600px;
+    overflow-y: auto; /* Tambahkan scroll vertikal jika konten panjang */
+    max-height: 90vh; /* Batas tinggi untuk layar kecil */
+}
+
+h1 {
+    font-size: 2rem;
+    color: #1E90FF;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+button {
+    background: #1E90FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 250px;
+}
+
+button:hover {
+    background: #4682B4;
+}
+
+.hidden {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #FF69B4;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 0.95rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
